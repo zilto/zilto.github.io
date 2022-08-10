@@ -1,1 +1,4 @@
 *.zip
+blogs/
+assets/
+app/__pycache__/
