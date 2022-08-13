@@ -48,7 +48,6 @@ app.include_router(api_router)
 
 app.mount("/assets", StaticFiles(directory=str(BASE_PATH.parent.joinpath("assets"))), name="assets")
 app.mount("/blogs", StaticFiles(directory=str(BASE_PATH.parent.joinpath("blogs"))), name="blogs")
-app.mount("/projectsf", StaticFiles(directory=str(BASE_PATH.parent.joinpath("projectsf"))), name="projectsf")
 
 
 if __name__ == "__main__":
