@@ -1,11 +1,12 @@
 from pathlib import Path
-import json
 
-from fastapi import FastAPI, APIRouter, Query, HTTPException, Request
+from fastapi import FastAPI, APIRouter, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import uvicorn
+
+# from .routers import blog
 
 
 BASE_PATH = Path(__file__).resolve().parent
@@ -16,7 +17,7 @@ app = FastAPI(title="API", openapi_url="/openapi.json")
 api_router = APIRouter()
 
 
-@api_router.get("/home/", status_code=200)
+@api_router.get("/", status_code=200)
 def home(request: Request) -> HTMLResponse:
     context = {"request": request}
     return TEMPLATES.TemplateResponse("index.html", context)
@@ -31,11 +32,18 @@ def projects(request: Request) -> HTMLResponse:
     return TEMPLATES.TemplateResponse("projects.html", context)
 
 
-# TODO load the blogs from db
 @api_router.get("/blog/", status_code=200)
 def blog(request: Request) -> HTMLResponse:
     context = {"request": request}
     return TEMPLATES.TemplateResponse("blog.html", context)
+
+
+# TODO load the blogs from db
+@api_router.get("/blogpost/", status_code=200)
+def blogpost(request: Request) -> HTMLResponse:
+    # blogpost_html = markdown.markdownFromFile(input=f"/blogs/")
+    context = {"request": request}
+    return TEMPLATES.TemplateResponse("blogpost.html", context)
 
 
 @api_router.get("/braindump/", status_code=200)
@@ -45,6 +53,7 @@ def braindump(request: Request) -> HTMLResponse:
 
 
 app.include_router(api_router)
+# app.include_router(blog.router)
 
 app.mount("/assets", StaticFiles(directory=str(BASE_PATH.parent.joinpath("assets"))), name="assets")
 app.mount("/blogs", StaticFiles(directory=str(BASE_PATH.parent.joinpath("blogs"))), name="blogs")

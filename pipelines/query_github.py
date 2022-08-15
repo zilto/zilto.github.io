@@ -26,6 +26,6 @@ def main():
     write_projects(parsed, "./projects/projects.json")
     
 
-
 if __name__ == "__main__":
     main()
+    

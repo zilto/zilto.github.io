@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -15,11 +15,9 @@
 			</header>
 		<main>
 			<div class="max-w-3xl ml-auto mr-auto">
-				<h2 class="text-2xl font-bold">Blog posts</h2>
-				<ul>
-					<a href="{{ url_for('blogs', path='hamilton_blog.html')}}" target="_blanks"><li>Hamilton</li></a>
-				</ul>
-				<a href="https://medium.com/@thijean/the-perks-of-creating-dataflows-with-hamilton-36e8c56dd2a" target="_blanks"><p>Read on Medium</p></a>
+                {% block blogpost %}
+                <p>Placeholder</p>
+                {% endblock %}
 			</div>
 		</main>
 	</body>

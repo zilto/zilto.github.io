@@ -10,23 +10,26 @@
 		<script src="https://cdn.tailwindcss.com" rel="stylesheet"></script>
 	</head>
 	<body>
-		{% include "_navigation.html" %}
-		<h2 class="p-6 text-2xl font-bold">Projects</h2>
-		<div class="p-5 grid grid-flow-dense xl:grid-cols-3 gap-2">
-			{% for project in all_projects %}
-			<div class="flex flex-col justify-between p-3 border rounded border-gray-400 bg-slate-200">
-				<div class="mb-2">
-					<div class="flex">
-						<div class="flex-grow text-gray-900 font-bold text-xl mb-2"> {{ project.name }} </div>
-						<a href="{{ project.html_url }}" target="_blanks"><img class="flex-minmax w-8 h-8 p-1" src="/assets/github.png"></a>
+		<header class="max-w-3xl ml-auto mr-auto pb-2">
+			{% include "_navigation.html" %}
+		</header>
+		<main>
+			<div class="max-w-3xl ml-auto mr-auto">
+				<div class="grid grid-flow-dense xl:grid-cols-3 gap-2">
+					{% for project in all_projects %}
+					<div class="flex flex-col justify-between p-2 border rounded border-gray-400 bg-slate-200">
+						<div class="mb-2">
+							<div class="text-gray-900 font-bold text-xl mb-2"> {{ project.name }} </div>
+							<p class="text-gray-700 text-base"> {{ project.description }} </p>
+						</div>
+						<div class="flex">
+							<p class="flex-grow text-sm text-gray-500"> {{ project.created_at }} </p>
+							<a href="{{ project.html_url }}" target="_blanks"><img class="flex-minmax w-8 h-8 p-1" src="/assets/github.png"></a>
+						</div>
 					</div>
-					<p class="text-gray-700 text-base"> {{ project.description }} </p>
-				</div>
-				<div>
-					<p class="text-sm text-gray-500"> {{ project.created_at }} </p>
+					{% endfor %}
 				</div>
 			</div>
-			{% endfor %}
-		</div>
+		</main>
 	</body>
 </html>
