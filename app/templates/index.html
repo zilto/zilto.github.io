@@ -1,43 +1,26 @@
-{# templates/index.html #}
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="Thiery Jean's personnal portfolio">
-    <meta name="author" content="Thierry Jean">
-    <link rel="icon" href="/assets/favicon.ico">
-    <title>Thierry Jean's portfolio</title>
-
-    <script src="https://cdn.tailwindcss.com" rel="stylesheet"></script>
-  </head>
-  <body>
-    <header class="max-w-3xl ml-auto mr-auto pb-2">
-    {% include "_navigation.html" %}
-    </header>
-    <main>
-      <div class="max-w-3xl ml-auto mr-auto">
-        <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-1 p-6 border-r">
-                <img class="object-contain h-48 w-48" src="/static/img/portrait.jpg" alt="portrait"></img>
-                <h3 class="font-bold">Thierry Jean</h3>
-                <p>M.Sc. student in Computational medicine</p>
-                <p><a href="/static/tech_cv_2022-08.pdf" target="_blank">Resume</a></p>
-                <div class="flex flex-row gap-1 pt-2">
-                  <a href="https://www.linkedin.com/in/thierry-jean/" target="_blank">
-                    <img class="object-scale-down h-8 w-8" src="/static/img/linkedin.png" alt="linkedin_icon"></img>
-                  </a>
-                  <a href="https://www.github.com/zilto" target="_blank">
-                    <img class="object-scale-down h-8 w-8" src="/static/img/github.png" alt="github_icon"></img>
-                  </a>
-                </div>
-            </div>
-            <div class="col-span-2 p-6">
-              A perpetual learner, I am curious and fascinated by us and the universe. Currently pursuing academic research in psychiatry, I use machine learning to forecast symptoms and impairments in clinical populations.  
+<!-- Main Content -->
+{% block content %}
+  <div class="max-w-3xl ml-auto mr-auto">
+    <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-1 p-6 border-r">
+            <img class="object-contain h-48 w-48" src="/static/img/portrait.jpg" alt="portrait"></img>
+            <h3 class="font-bold">Thierry Jean</h3>
+            <p>M.Sc. student in Computational medicine</p>
+            <p><a href="/static/tech_cv_2022-08.pdf" target="_blank">Resume</a></p>
+            <div class="flex flex-row gap-1 pt-2">
+              <a href="https://www.linkedin.com/in/thierry-jean/" target="_blank">
+                <img class="object-scale-down h-8 w-8" src="/static/img/linkedin.png" alt="linkedin_icon"></img>
+              </a>
+              <a href="https://www.github.com/zilto" target="_blank">
+                <img class="object-scale-down h-8 w-8" src="/static/img/github.png" alt="github_icon"></img>
+              </a>
             </div>
         </div>
-      </div>
-    </main>
-  </body>
-</html>
+        <div class="col-span-2 p-6">
+          A perpetual learner, I am curious and fascinated by us and the universe. Currently pursuing academic research in psychiatry, I use machine learning to forecast symptoms and impairments in clinical populations.  
+        </div>
+    </div>
+  </div>
+{% endblock %}
