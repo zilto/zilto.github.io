@@ -1,0 +1,21 @@
+{
+  "name": "Personal website",
+  "description": "Website to showcase my projects and writings",
+  "highlights": [
+    "Leverage Jinja2 to create DRY and more maintainable code",
+    "My first FastAPI project, which serves templated HTML based on HTTP requests"
+  ],
+  "technologies": [
+    "FastAPI",
+    "HTML",
+    "Tailwind CSS",
+    "Jinja2",
+    "RESTful API"
+  ],
+  "year": 2022,
+  "link": null,
+  "tags":[
+    "API",
+    "cloud"
+  ]
+}

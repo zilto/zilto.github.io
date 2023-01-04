@@ -1,0 +1,16 @@
+{
+  "name": "Imgur Dataset Generator",
+  "description": "Archive Imgur albums based on list of links",
+  "highlights": [
+    "Useful for creating image, text, or multimodal datasets",
+    "Preserve the internal structure images and text found in albums",
+    "Archives are transportable folders tracked with a registry"
+  ],
+  "technologies": [
+    "sqlite",
+    "Imgur official API"
+  ],
+  "year": 2021,
+  "link": null,
+  "tags": []
+}

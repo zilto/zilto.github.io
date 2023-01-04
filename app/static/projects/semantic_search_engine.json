@@ -1,0 +1,23 @@
+{
+  "name": "Semantic Blog Search",
+  "description": "Query blogs from RSS feeds and explore content with vector search engine",
+  "highlights": [
+    "Efficient website scraping and parsing via XML to retrieve RSS feed links",
+    "Orchestrate RSS polling and avoid duplicates via download registry",
+    "Create a UI to streamline an underlying SDK to a specific use case"
+  ],
+  "technologies": [
+    "HTML",
+    "XML",
+    "RSS",
+    "Vector search (Weaviate)",
+    "Microservice (Docker)",
+    "Web UI (Streamlit)",
+    "sqlite"
+  ],
+  "year": 2022,
+  "link": null,
+  "tags":[
+    "NLP"
+  ]
+}

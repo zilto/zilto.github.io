@@ -1,0 +1,20 @@
+{
+  "name": "Voice assistant",
+  "description": "Use your microphone to launch arbitrary Python functions",
+  "highlights": [
+    "Speech2Text transcription using OpenAI Whisper model",
+    "Use async, websockets, and threads for low latency"
+  ],
+  "technologies": [
+    "OpenAI Whisper",
+    "async",
+    "websockets",
+    "threads",
+    "subprocesses"
+  ],
+  "year": 2022,
+  "link": null,
+  "tags": [
+    "NLP"
+  ]
+}

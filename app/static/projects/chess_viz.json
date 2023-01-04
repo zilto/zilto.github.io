@@ -1,0 +1,22 @@
+{
+  "name": "Abstract Chess Visualization",
+  "description": "Generate abstract chess visualization based on game records (PGN)",
+  "highlights": [
+    "Works with any PGN game file",
+    "Modular code to modify dimensions, layout, and visual elements"
+  ],
+  "technologies": [
+    "vpype",
+    "vsketch",
+    "SVG",
+    "PGN",
+    "data structures",
+    "shapely",
+    "frontend"
+  ],
+  "year": 2022,
+  "link": null,
+  "tags": [
+    "art"
+  ]
+}

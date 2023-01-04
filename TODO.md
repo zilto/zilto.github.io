@@ -8,7 +8,7 @@
 - Idea dump: quotes, things I learned, fun facts
 
 # Fill pages
-
+       
 # Style pages
 
 # Deploy via AWS

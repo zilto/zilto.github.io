@@ -1,0 +1,18 @@
+{
+  "name": "Spotify Downloader",
+  "description": "Webapp to download Spotify playlist",
+  "highlights": [
+    "Leverage BytesIO buffers to avoid making copies and bloating the client",
+    "Lightweight solution with few dependencies"
+  ],
+  "technologies": [
+    "Docker",
+    "Streamlit",
+    "Spotify REST API",
+    "YouTube Python SDK",
+    "ffmpeg"
+  ],
+  "year": 2022,
+  "link": null,
+  "tags": []
+}

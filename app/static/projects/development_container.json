@@ -1,0 +1,19 @@
+{
+  "name": "Development container",
+  "description": "Docker container to enable reproducible experimentation",
+  "highlights": [
+    "Multi-stage and secure (no secret leakage) Docker build",
+    "Virtual env, volume mounting, and remote jupyter server configurable via YAML",
+    "Scripts to execute Python code within the Docker container"
+  ],
+  "technologies": [
+    "Docker",
+    "UNIX",
+    "conda",
+    "subprocess",
+    "docker-compose"
+  ],
+  "year": 2022,
+  "link": null,
+  "tags": []
+}

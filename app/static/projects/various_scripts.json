@@ -1,0 +1,21 @@
+{
+  "name": "Various scripts",
+  "description": "List of utility scripts / small projects",
+  "highlights": [
+    "Block website IP for set amount of time to study without distraction",
+    "Excel file formatter for colleagues packaged as distributate .exe",
+    "Parse PDF to extract client zipcodes using .rtf format and regex",
+    "Transcribe video and audio file using OpenAI Whisper model"
+  ],
+  "technologies": [
+    "regex",
+    "Python"
+  ],
+  "year": 2020,
+  "link": null,
+  "tags": [
+    "NLP",
+    "Data science",
+    "Productivity"
+  ]
+}
