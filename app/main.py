@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import uvicorn
 
-from .schemas import load_all_projects
+from schemas import load_all_projects
 
 
 BASE_PATH = Path(__file__).resolve().parent
@@ -73,6 +73,6 @@ def sketch(request: Request):
     context = get_context(request, sketch="flower.js")
     return templates.TemplateResponse("sketch.html", context)
 
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="localhost", port=8001, log_level="debug")    
+#
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="localhost", port=8001, log_level="debug")
