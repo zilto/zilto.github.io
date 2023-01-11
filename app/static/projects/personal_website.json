@@ -1,6 +1,7 @@
 {
-  "name": "Personal website",
-  "description": "Website to showcase my projects and writings",
+  "id": 5,
+  "name": "Personal Website",
+  "short_description": "Website to showcase my projects and writings",
   "highlights": [
     "Leverage Jinja2 to create DRY and more maintainable code",
     "My first FastAPI project, which serves templated HTML based on HTTP requests"
@@ -9,13 +10,13 @@
     "FastAPI",
     "HTML",
     "Tailwind CSS",
-    "Jinja2",
-    "RESTful API"
+    "Jinja2"
   ],
   "year": 2022,
-  "link": null,
+  "url": "https://github.com/zilto/personal_website",
   "tags":[
     "API",
     "cloud"
-  ]
+  ],
+  "star": false
 }

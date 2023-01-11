@@ -1,19 +1,23 @@
 {
-  "name": "Development container",
-  "description": "Docker container to enable reproducible experimentation",
+  "id": 2,
+  "name": "Development Container",
+  "short_description": "Docker container to enable reproducible experimentation",
   "highlights": [
-    "Multi-stage and secure (no secret leakage) Docker build",
+    "Multi-stage, lightweight (conda-pack), fast (mamba), and secure (no secret leakage) Docker build",
     "Virtual env, volume mounting, and remote jupyter server configurable via YAML",
     "Scripts to execute Python code within the Docker container"
   ],
   "technologies": [
     "Docker",
+    "docker-compose",
     "UNIX",
     "conda",
-    "subprocess",
-    "docker-compose"
+    "mamba",
+    "conda-pack",
+    "subprocess"
   ],
   "year": 2022,
-  "link": null,
-  "tags": []
+  "url": "https://github.com/zilto/development-container/",
+  "tags": [],
+  "star": true
 }

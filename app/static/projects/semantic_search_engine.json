@@ -1,6 +1,7 @@
 {
+  "id": 6,
   "name": "Semantic Blog Search",
-  "description": "Query blogs from RSS feeds and explore content with vector search engine",
+  "short_description": "Query blogs from RSS feeds and explore content with vector search engine",
   "highlights": [
     "Efficient website scraping and parsing via XML to retrieve RSS feed links",
     "Orchestrate RSS polling and avoid duplicates via download registry",
@@ -16,8 +17,9 @@
     "sqlite"
   ],
   "year": 2022,
-  "link": null,
+  "url": "https://github.com/zilto/intelgenie",
   "tags":[
     "NLP"
-  ]
+  ],
+  "star": true
 }

@@ -1,6 +1,7 @@
 {
+  "id": 3,
   "name": "Imgur Dataset Generator",
-  "description": "Archive Imgur albums based on list of links",
+  "short_description": "Archive Imgur albums based on list of links",
   "highlights": [
     "Useful for creating image, text, or multimodal datasets",
     "Preserve the internal structure images and text found in albums",
@@ -11,6 +12,7 @@
     "Imgur official API"
   ],
   "year": 2021,
-  "link": null,
-  "tags": []
+  "url": "https://github.com/zilto/imgur_archive",
+  "tags": [],
+  "star": false
 }

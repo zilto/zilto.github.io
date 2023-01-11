@@ -1,6 +1,7 @@
 {
+  "id": 7,
   "name": "Spotify Downloader",
-  "description": "Webapp to download Spotify playlist",
+  "short_description": "Webapp to download Spotify playlist",
   "highlights": [
     "Leverage BytesIO buffers to avoid making copies and bloating the client",
     "Lightweight solution with few dependencies"
@@ -13,6 +14,7 @@
     "ffmpeg"
   ],
   "year": 2022,
-  "link": null,
-  "tags": []
+  "url": "https://github.com/zilto/spotify_webapp",
+  "tags": [],  "star": false
+
 }

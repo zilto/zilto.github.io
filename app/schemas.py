@@ -43,4 +43,19 @@ def load_all_projects(directory: str) -> list[dict]:
             project = load_project(str(filepath))
             projects.append(project)
 
+    projects = sorted(projects, key=lambda x: x["year"], reverse=True)
+
     return projects
+
+def reorder_starred_projects(projects: list) -> list:
+    reordered = []
+    others = []
+    for p in projects:
+        if p.get("star"):
+            reordered.append(p)
+        else:
+            others.append(p)
+
+    reordered.extend(others)
+
+    return reordered

@@ -1,6 +1,7 @@
 {
-  "name": "Voice assistant",
-  "description": "Use your microphone to launch arbitrary Python functions",
+  "id": 9,
+  "name": "Voice Assistant",
+  "short_description": "Use your microphone to launch arbitrary Python functions",
   "highlights": [
     "Speech2Text transcription using OpenAI Whisper model",
     "Use async, websockets, and threads for low latency"
@@ -10,11 +11,12 @@
     "async",
     "websockets",
     "threads",
-    "subprocesses"
+    "fuzzy matching"
   ],
   "year": 2022,
-  "link": null,
+  "url": "https://github.com/zilto/voice_assistant",
   "tags": [
     "NLP"
-  ]
+  ],  "star": true
+
 }

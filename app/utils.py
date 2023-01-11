@@ -6,8 +6,8 @@ from jinja2 import Environment, FileSystemLoader
 
 
 def md2html(md_filepath, output_path):
-    environment = Environment(loader=FileSystemLoader("./pipelines"))
-    template = environment.get_template("blogpost_template.html")
+    environment = Environment(loader=FileSystemLoader("./app/templates"))
+    template = environment.get_template("blog.html")
 
     html_str = markdown.markdownFromFile(input=md_filepath)
     converted = template.render(blogpost=html_str)
