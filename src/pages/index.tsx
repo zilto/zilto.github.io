@@ -1,42 +1,30 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
 import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      title={`Main page`}
+      description="Main page">
       <main>
-        <HomepageFeatures />
+        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+          <div className="container">
+            <Heading as="h1" className="hero__title" class="text-center">
+              <p class="font-serif italic">How can less be more?</p>
+              <p class="font-serif italic">More is more!</p>
+              <p class="font-serif text-lg"> ‐Yngwie Malmsteem</p>
+            </Heading>
+          </div>
+        </header>
+        <div class="max-w-xl ml-auto mr-auto px-4 py-10 text-justify">
+          <p> In 2019, I decided I would either learn the German or the Python language. I ended up going through the book <a class="italic" href="https://learncodethehardway.com/client/#/product/learn-python-the-hard-way-5e-2023/" target="_">Learn Python the Hard Way</a> while commuting between my full-time work, evening university classes, and home. Soon after, I learned about machine learning in the context of neurosciences and enrolled for a Master's in Computational Medicine. This website is an effort to document and share my programming journey.</p>
+
+          <p>If there's an activity you've been interested in and putting away, I encourage you to stop reading this and go focus on that instead! You'll be amazed by the progress you've made in a week, a month, and a year from now. Practice makes perfect and more is more.</p>
+        </div>
       </main>
     </Layout>
   );

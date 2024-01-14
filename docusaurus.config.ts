@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'More is more',
   tagline: 'by Thierry Jean',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.png',
 
   // Set the production url of your site here
   url: 'https://tjean.me',
@@ -37,6 +37,20 @@ const config: Config = {
           showReadingTime: true,
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
+          feedOptions: {
+            title: "MoreIsMore",
+            description: "MoreIsMore blog feed by Thierry Jean.",
+            type: "all",
+            copyright: `Copyright © ${new Date().getFullYear()} Thierry Jean`,
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              });
+            },
+          }
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -52,7 +66,7 @@ const config: Config = {
       title: 'More is more',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/icon.png',
       },
       items: [
         {
@@ -77,21 +91,6 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Links',
-          items: [
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/thierry-jean/',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/zilto',
-            },
-          ],
-        },
-      ],
       copyright: `© Copyright ${new Date().getFullYear()}, Thierry Jean. Built with Docusaurus.`,
     },
     prism: {
@@ -99,6 +98,20 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 };
 
 export default config;

@@ -28,3 +28,7 @@
   --ifm-color-primary-lightest: #a2c488;
   --ifm-background-color: #1b1a23;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
