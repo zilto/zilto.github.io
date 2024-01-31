@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8537],{2150:e=>{e.exports=JSON.parse('{"label":"Cohere","permalink":"/personal_website/blog/tags/cohere","allTagsPath":"/personal_website/blog/tags","count":1,"unlisted":false}')}}]);

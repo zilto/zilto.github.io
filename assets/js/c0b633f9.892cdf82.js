@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[162],{721:e=>{e.exports=JSON.parse('{"label":"Prefect","permalink":"/personal_website/blog/tags/prefect","allTagsPath":"/personal_website/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[980],{5638:e=>{e.exports=JSON.parse('{"title":"Personal projects","description":"Machine learning projects.","slug":"/category/personal-projects","permalink":"/docs/category/personal-projects","navigation":{"next":{"title":"dev container","permalink":"/docs/personal/development-container"}}}')}}]);
