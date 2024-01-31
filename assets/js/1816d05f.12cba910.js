@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6090],{2586:e=>{e.exports=JSON.parse('{"label":"orchestration","permalink":"/blog/tags/orchestration","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
