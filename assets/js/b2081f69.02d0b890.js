@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[4060],{5085:e=>{e.exports=JSON.parse('{"label":"FastAPI","permalink":"/personal_website/blog/tags/fast-api","allTagsPath":"/personal_website/blog/tags","count":2,"unlisted":false}')}}]);
