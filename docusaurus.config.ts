@@ -53,7 +53,7 @@ const config: Config = {
                 ...rest,
               });
             },
-          }
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,6 +79,7 @@ const config: Config = {
           label: 'Portfolio',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/til', label: 'TIL', position: 'left'},
         {to: '/about', label: 'About', position: 'left'},
         {
           href: 'https://www.linkedin.com/in/thierry-jean/',
@@ -114,6 +115,31 @@ const config: Config = {
         },
       };
     },
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: "today-i-learned",
+        routeBasePath: "til",
+        path: "./til",
+        showReadingTime: true,
+        blogSidebarTitle: 'Today I Learned',
+        blogSidebarCount: 'ALL',
+        feedOptions: {
+          title: "Today I Learned",
+          description: "TIL feed by Thierry Jean.",
+          type: "all",
+          copyright: `Copyright © ${new Date().getFullYear()} Thierry Jean`,
+          createFeedItems: async (params) => {
+            const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+            return defaultCreateFeedItems({
+              // keep only the 10 most recent blog posts in the feed
+              blogPosts: blogPosts.filter((item, index) => index < 10),
+              ...rest,
+            });
+          },
+        },
+      },
+    ]
   ],
 };
 
