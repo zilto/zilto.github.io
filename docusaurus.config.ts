@@ -72,15 +72,14 @@ const config: Config = {
         src: 'img/icon.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Portfolio',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Portfolio',
+        // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/til', label: 'TIL', position: 'left'},
-        {to: '/about', label: 'About', position: 'left'},
         {
           href: 'https://www.linkedin.com/in/thierry-jean/',
           label: "Let's connect",

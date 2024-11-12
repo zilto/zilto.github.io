@@ -22,12 +22,6 @@ export default function Home(): JSX.Element {
               <p>
                 I'm also <b>instructor assistant</b> at <a href="https://www.getsphere.com/">Sphere</a>&nbsp;🔮, which offers live courses to tech professionals. I worked with leading expert in <b>causal inference, NLP, and search</b> to deliver courses with actionable learning outcomes&nbsp;🎯
               </p>
-              <p>
-                ⏳&nbsp;During my data science internship at <a href="https://moov.ai/en/">MoovAI</a>, I worked on <b>dynamic price bidding</b> for the ad exchange <a href="https://www.sharethrough.com/">ShareThrough</a>. During R&D, I built the experimentation system for large scale automated backtesting of candidate algorithms.
-              </p>
-              <p>
-                Hobby-wise, I code for fun to create <a href="https://www.instagram.com/mattdesl_art/">algorithmic</a> and <a href="https://www.reddit.com/r/PlotterArt/">plotter</a> art, I started playing guitar at age 11, and I own way too many rogue-lite games.
-              </p>
             </div>
           </div>
         </div>
